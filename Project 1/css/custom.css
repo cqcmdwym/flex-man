@@ -10,6 +10,8 @@ ul#flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    height: 300px;
 }
 
 ul li {
