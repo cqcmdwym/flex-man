@@ -35,7 +35,7 @@ ul li a span {
     color: #fff;
     bottom: 7px;
     left: 15px;
-    font-size: 1em;
+    font-size: .5em;
     z-index: 3;
     font-family: 'Raleway';
 }
@@ -60,25 +60,31 @@ ul li:after {
     /* IE6-9 */
 }
 
-.magnify{
+.magnify {
     background: url(../images/magnify.png) no-repeat;
     position: absolute;
     z-index: 5;
     width: 54px;
     height: 55px;
     opacity: 0;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
-    left:0;
-    right:0;
-    top:50%;
+    left: 0;
+    right: 0;
+    top: 50%;
     transform: translateY(-50%);
 }
 
-ul li:hover .magnify{
+ul li:hover .magnify {
     opacity: 100;
 }
 
-ul li:hover{
+ul li:hover {
     opacity: .8;
+}
+
+@media only screen and (max-width: 40.063em) {
+    ul li {
+        width: 150px;
+    }
 }
