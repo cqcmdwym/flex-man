@@ -1,0 +1,74 @@
+<!-- https://mp.weixin.qq.com/s/xVoMdS4Lh8AhlnwOYvQioQ -->
+<html>
+
+<head>
+  <style>
+    header {
+      grid-area: header;
+      padding: 20px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    header button {
+      justify-self: end;
+    }
+
+    header nav {
+      justify-self: start;
+    }
+
+    .container {
+      max-width: 900px;
+      background-color: #fff;
+      margin: 0 auto;
+      padding: 0 60px;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-areas: "header header" "sidebar main" "footer footer";
+      grid-gap: 50px;
+    }
+
+    .wrapper .sidebar {
+      grid-area: sidebar;
+    }
+
+    .wrapper .main {
+      grid-area: main;
+    }
+
+    footer {
+      grid-area: footer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li>About</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <button>Login</button>
+    </header>
+    <aside class="sidebar">
+      <h3>Recent Posts</h3>
+    </aside>
+    <section class="main">
+      <h2>Flexbox Layout</h2>
+      <p>dfdfdfdfdfdfd</p>
+    </section>
+    <!-- /wrapper -->
+    <footer>
+      <h3>Footer</h3>
+      <p>footer dfdfdsfds</p>
+    </footer>
+  </div>
+  <! -- /container -->
+</body>
+
+</html>
